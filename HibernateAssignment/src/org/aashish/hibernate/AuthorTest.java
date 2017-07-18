@@ -16,8 +16,6 @@ public class AuthorTest
 		SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();
 		Session session=sessionFactory.openSession();
 		Transaction t=session.beginTransaction();
-		Calendar calender=new GregorianCalendar();
-		      calender.set(Calendar.YEAR,1992);
 
 
 		Author a=new Author();
@@ -70,9 +68,9 @@ calendar.set(Calendar.DATE,23);
 a.setDob(calendar);
 
 		Calendar calendar1=new GregorianCalendar();
-		calendar1.set(Calendar.YEAR,1992);
-		calendar1.set(Calendar.MONTH,05);
-		calendar1.set(Calendar.DATE,23);
+		calendar1.set(Calendar.YEAR,1994);
+		calendar1.set(Calendar.MONTH,10);
+		calendar1.set(Calendar.DATE,22);
 a1.setDob(calendar1);
 		a1.setAge("24");
 		a1.setLastName("Kumar");

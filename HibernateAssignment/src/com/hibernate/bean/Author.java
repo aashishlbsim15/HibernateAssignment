@@ -94,6 +94,7 @@ List<String> subjects=new ArrayList<>();
 @Column(name="fname")
  private   String firstName;
     @Column(name="lname")
+    @Transient
 private String lastName;
     @Column(name="age")
 private String age;
